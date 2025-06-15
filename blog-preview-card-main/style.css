@@ -1,0 +1,61 @@
+body{
+    background-color: hsl(47, 88%, 63%)
+}
+
+main{
+    background-color:  hsl(0, 0%, 100%);
+    width: 370px;
+    height: 480px;
+    border-radius: 20px;
+    padding-top: 20px;
+    max-width: 1240px;
+    min-width: 370px;
+    margin: auto;
+    margin-top: 20vh;
+    box-shadow:  5px 5px 0px 4px black;
+    border: 1px solid black;
+}
+img{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+aside{
+    background-color:  hsl(47, 88%, 63%);
+    padding: 5px;
+    width: 5em;
+    border-radius: 10px; 
+    margin-left: 1.5em;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+p{
+    margin-left: 1.5em;
+    margin-top: 15px; 
+}
+h1{
+    font-size: 1.7em;
+    margin-left: 0.9em;
+    margin-top: 15px; 
+}
+p.texto{
+    color: hsl(0, 0%, 42%);
+    line-height: 25px;   
+}
+img.GregHooper{
+    width: 40px;
+    margin-left: 1.5em;
+    margin-top: 10px
+}
+div.alinhamento{
+    display: inline-flex;
+}
+div.alinhamento > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
