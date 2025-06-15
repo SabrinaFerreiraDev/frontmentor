@@ -23,7 +23,7 @@ img{
 aside{
     background-color:  hsl(47, 88%, 63%);
     padding: 5px;
-    width: 5em;
+    width: 7em;
     border-radius: 10px; 
     margin-left: 1.5em;
     margin-top: 15px;
@@ -47,7 +47,7 @@ p.texto{
 img.GregHooper{
     width: 40px;
     margin-left: 1.5em;
-    margin-top: 10px
+   
 }
 div.alinhamento{
     display: inline-flex;
@@ -56,7 +56,7 @@ div.alinhamento > p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 footer{
     text-align: center;
