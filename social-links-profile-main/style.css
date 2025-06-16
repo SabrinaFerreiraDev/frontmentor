@@ -21,7 +21,7 @@ div > img{
     display: block;
     border-radius: 50%;
     margin: auto;
-    width: 6em;  
+    width: 6em; 
 }
 h1{
     font-weight: bold;
@@ -56,4 +56,11 @@ a{
 }
 section >p:hover{
     background-color: hsla(75, 77%, 57%, 0.445);;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a {
+     color: hsl(228, 45%, 44%);}
+footer{
+    color: aliceblue;
+    padding-top: 2em;
 }
