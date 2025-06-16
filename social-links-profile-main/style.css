@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*body{
+*{
     margin: 0%;
     padding: 0%;
 }
@@ -27,13 +27,15 @@ h1{
     font-weight: bold;
     color:white;
     text-align: center;
+    padding-bottom: 0.5em;
 }
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-weight: bold;
     color: hsl(75, 94%, 57%);
-    font-size: 1.2em;
+    font-size: 1.1em;
+    padding-bottom: 1em;
 }
 main #profissao{
     font-weight: 400;
