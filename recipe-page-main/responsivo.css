@@ -6,7 +6,7 @@ body{
     margin: 0em;
     padding: 0em;
 }
-@media (max-width:600px) {
+@media (max-width:660px) {
         body{
             background-color: hsl(30, 54%, 90%);
         }
@@ -16,6 +16,7 @@ body{
             width: 100%;
             height: 100%;
             background-color:hsl(0, 0%, 100%);
+            padding-bottom: 10%;
            
         }
         img{
@@ -28,7 +29,7 @@ body{
             padding-right: 2em;
         }
     }
-@media (min-width:600px) {
+@media (min-width:660px) {
     body{
         background-color: hsl(30, 54%, 90%);
     }
@@ -38,6 +39,7 @@ body{
         width: 50%;
         height: 100%;
         background-color:hsl(0, 0%, 100%);
+        padding-bottom: 10%;
     }
     img{
         padding-left: 0.2em;
@@ -56,7 +58,7 @@ body{
         border-radius: 1.5em;
         font-weight: 500;
 }
-    section hr{
+    section  hr{
             margin: auto;
             margin: 2em;
             width: 90%;
@@ -70,8 +72,5 @@ body{
         list-style: none; /* remove os pontinhos */
         padding: 0;
         gap: 0.5em 1em; /* espaçamento entre linhas e colunas */
-        }
-    section.instrucoes{
-            padding-right: 2em;
         }
 }
