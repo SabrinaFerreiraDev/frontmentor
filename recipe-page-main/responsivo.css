@@ -31,7 +31,7 @@ body{
     main{
         border-radius: 1.7em;
         margin: auto;
-        max-width: 40em;
+        max-width: 45em;
         height: 111em;
         background-color:hsl(0, 0%, 100%);
     }
@@ -45,7 +45,7 @@ body{
     }
     section.preparo{
         background-color: hsl(330, 100%, 98%);
-        width: 35em;
+        width: 37em;
         height: 9em;
         margin: auto;
         color:hsl(332, 51%, 32%);
@@ -59,12 +59,15 @@ body{
 }
         ul.tabela-nutrientes { 
     
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
-    width: 500px;
-    margin: auto;
-    list-style: none; /* remove os pontinhos */
-    padding: 0;
-    gap: 0.5em 1em; /* espaçamento entre linhas e colunas */
-}
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+            width: 500px;
+            margin: auto;
+            list-style: none; /* remove os pontinhos */
+            padding: 0;
+            gap: 0.5em 1em; /* espaçamento entre linhas e colunas */
+        }
+        section.instrucoes{
+            padding-right: 2em;
+        }
 }
