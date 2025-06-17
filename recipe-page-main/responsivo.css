@@ -6,14 +6,14 @@ body{
     margin: 0em;
     padding: 0em;
 }
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
         body{
             background-color: hsl(30, 54%, 90%);
         }
         main{
             border-radius: 1.7em;
             margin: auto;
-            max-width: 30em;
+            width: 100%;
             height: 116em;
             background-color:hsl(0, 0%, 100%);
            
@@ -22,20 +22,20 @@ body{
             padding-left: 0.2em;
             border-radius: 1.5em;
             padding-top: 0.2em;
-            max-width: 29.6em; background-size: cover;
+            width: 98%;
         }
         section.instrucoes{
             padding-right: 2em;
         }
     }
-@media screen and (min-width:601px) {
+@media (min-width:600px) {
     body{
         background-color: hsl(30, 54%, 90%);
     }
     main{
         border-radius: 1.7em;
         margin: auto;
-        max-width: 45em;
+        width: 50%;
         height: 116em;
         background-color:hsl(0, 0%, 100%);
     }
@@ -43,29 +43,29 @@ body{
         padding-left: 0.2em;
         border-radius: 1.5em;
         padding-top: 0.5em;
-        max-width: 42.8em;
+        width: 97%;
         margin: auto;
         display: block;
     }
     section.preparo{
         background-color: hsl(330, 100%, 98%);
-        width: 37em;
+        width: 90%;
         height: 9em;
         margin: auto;
         color:hsl(332, 51%, 32%);
         border-radius: 1.5em;
         font-weight: 500;
 }
-        section hr{
-            margin: auto;
-            margin: 2em;
-            width: 34em;
+section hr{
+    margin: auto;
+    margin: 2em;
+    width: 50%;
 }
         ul.tabela-nutrientes { 
     
             display: grid;
             grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
-            width: 500px;
+            width: 70%;
             margin: auto;
             list-style: none; /* remove os pontinhos */
             padding: 0;
