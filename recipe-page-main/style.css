@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'tuiven';
+    src: url('assets/fonts/tuiven/TUIVEN\ Trial.ttf') format('truetype');}
+@font-face {
+    font-family: 'corleone';
+    src: url('assets/fonts/corleone/Corleone-Due-Regular.otf') format('opentype');
+}
+:root{
+    --fonttuiv: tuiven;
+    --fontcorleone: corleone;
+    --corh2:hsl(14, 45%, 36%)
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+h1{
+    text-align: center;
+    font-family: var(--fontcorleone);
+    font-weight: 400;
+    font-size: 3em;
+    padding-top: 0.5em; 
+}
+.omelette > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:  hsl(30, 10%, 34%);
+    text-align: justify;
+    text-align: center;
+    padding: 2em;
+}
+
+.preparo{
+    background-color: hsl(330, 100%, 98%);
+    width: 26em;
+    height: 9em;
+    margin: auto;
+    color:hsl(332, 51%, 32%);
+    border-radius: 1.5em;
+    font-weight: 500; 
+}
+.preparo > p,section.preparo li::marker{
+    padding-top: 1em;
+    padding-left: 1.5em;
+    color:hsl(332, 51%, 32%);
+    font-family: var(--fonttuiv);
+}
+section.preparo,li{
+    list-style-position: inside;
+    padding-left: 1.5em;
+    padding-top: 0.6em;
+    color:  hsl(30, 10%, 34%);   
+}
+
+h2,li::marker{
+    
+    padding-left: 1em;
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: justify;
+    color: hsl(14, 45%, 36%);
+}
+h2{
+
+    font-family: var(--fonttuiv);
+}
+hr{
+   
+    margin: auto;
+    margin: 2em;
+    width: 27em;
+}
+ol > li::marker{
+  font-weight: bold;
+  font-size: 1.2em;
+
+}
+ol  strong{
+        padding-left: 1em;
+}
+ol li{
+    margin-bottom: 0.7em;
+}
+.tabela-nutrientes { 
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+    width: 300px;
+    margin: auto;
+    list-style: none; /* remove os pontinhos */
+    padding: 0;
+    gap: 0.5em 1em; /* espaçamento entre linhas e colunas */
+}
+.nutriente > p{
+    padding: 1.6em;
+    color:  hsl(30, 10%, 34%);
+}
+
+.tabela-nutrientes li {
+   
+    padding: 0.3em 0;
+    border-bottom: 1px solid #ccc;
+}
+.tabela-nutrientes li>strong{
+    color: hsl(14, 45%, 36%);
+    font-size: 1.2em;
+}
+footer{
+    text-align: center;
+}

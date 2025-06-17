@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+*{
+    margin: 0em;
+    padding: 0em;
+}
+@media screen and (max-width:500px) {
+        body{
+            background-color: hsl(30, 54%, 90%);
+        }
+        main{
+            border-radius: 1.7em;
+            margin: auto;
+            max-width: 30em;
+            height: 111em;
+            background-color:hsl(0, 0%, 100%);
+        }
+        img{
+            padding-left: 0.2em;
+            border-radius: 1.5em;
+            padding-top: 0.2em;
+            max-width: 29.6em;
+        }
+    }
+@media screen and (min-width:501px) {
+    body{
+        background-color: hsl(30, 54%, 90%);
+    }
+    main{
+        border-radius: 1.7em;
+        margin: auto;
+        max-width: 40em;
+        height: 111em;
+        background-color:hsl(0, 0%, 100%);
+    }
+    img{
+        padding-left: 0.2em;
+        border-radius: 1.5em;
+        padding-top: 0.5em;
+        max-width: 38.8em;
+        margin: auto;
+        display: block;
+    }
+    section.preparo{
+        background-color: hsl(330, 100%, 98%);
+        width: 35em;
+        height: 9em;
+        margin: auto;
+        color:hsl(332, 51%, 32%);
+        border-radius: 1.5em;
+        font-weight: 500;
+}
+        section hr{
+            margin: auto;
+            margin: 2em;
+            width: 34em;
+}
+        ul.tabela-nutrientes { 
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+    width: 500px;
+    margin: auto;
+    list-style: none; /* remove os pontinhos */
+    padding: 0;
+    gap: 0.5em 1em; /* espaçamento entre linhas e colunas */
+}
+}
