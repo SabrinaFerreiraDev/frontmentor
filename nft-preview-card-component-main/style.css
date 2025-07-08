@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding: 0;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    background-color:  hsl(215, 32%, 27%);
+    width: 300px;
+    height: 70vh;
+    border-radius: 1em;
+    
+}
+.imagem{
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 6%; /* espaço acima da imagem */
+}
+.imagemescondida{
+    display: none;
+}
+.imagem:hover > .imagemescondida {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.principal{
+    border-radius: 1em;
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8em;
+    padding-left: 28px;
+}
+p{
+    padding-left: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:hsl(215, 51%, 70%)
+}
+.icon{
+
+    padding-left: 28px;
+    float: left;
+    padding-top: 15px;
+}
+.dados{
+    color: hsl(178, 100%, 50%);
+    padding-left: 15px;
+    float: left;
+}
+.dadosd{
+    color: hsl(215, 51%, 70%);
+    padding-left: 15px;
+    float: left;
+}
+.icond{
+    padding-left: 28px;
+    float: left;
+    padding-top: 15px;
+}
+hr{
+    clear: both;
+    width: 80%;
+   
+}
+.Creation{
+
+    width: 40px;
+}
+.Crea{
+    display: flex; /* faz imagem e texto ficarem lado a lado */
+    align-items: center; /* alinha verticalmente ao centro */
+    gap: 0px; /* espaço entre imagem e texto */
+    padding: 0.9em;
+}
+aside{
+    align-self:left;
+}

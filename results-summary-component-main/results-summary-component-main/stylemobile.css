@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "hank";
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#resultados{
+    height: 42vh;
+   background-image: linear-gradient(to bottom , hsl(252, 100%, 67%),
+   hsl(241, 81%, 54%));
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+   margin: auto;
+   text-align: justify;
+   display: flex;
+   flex-flow: column nowrap;
+}
+h1{
+    font-size: 1.5em;
+    color: hsl(241, 100%, 89%);
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+aside >  #num{
+    font-family: "hank";
+   text-align: center;
+   padding-top: 10px;
+   font-size: 4em;
+   font-weight: bolder;
+   color: aliceblue;
+
+}
+#info{
+    color: hsl(241, 100%, 89%);
+    font-family: "hank";
+    text-align: center;
+}
+aside{
+    margin: auto;
+    width: 130px;
+    height: 130px;
+    background-image: linear-gradient(to bottom,hsl(241, 81%, 54%), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 30px;
+}
+#informacao{
+    font-family:  "hank";
+    padding-top: 10px ;
+    padding-bottom: 25PX;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    
+}
+#resumo{  
+    padding-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+ 
+}
+h3{
+    padding-left: 20px;
+    padding-top: 15px;
+   
+}
+.item {
+    justify-content: space-between; /* empurra os lados */
+    align-items: center;            /* alinha verticalmente */
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+.icone {
+    width: 20px; /* Ajuste conforme necessário */
+    height: auto;
+}
+#reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.082);
+    padding: 15px;
+    width: 27rem;
+    border-radius: 10px;
+}
+#celebro{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.068);
+    padding: 15px;
+    width: 27rem;
+    border-radius: 10px;
+}
+#verbal{
+    color: hsl(166, 100%, 37%);
+    background-color:  hsla(166, 100%, 37%, 0.048);
+    padding: 15px;
+    width: 27rem;
+    border-radius: 10px;
+}
+#visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.062);
+    padding: 15px;
+    width: 27rem;
+    border-radius: 10px;
+    display: flex;
+}
+strong{
+    color: rgba(0, 0, 0, 0.74);
+}
+.label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+p{
+    color: hsl(228, 3%, 64%);
+}
+button{
+    margin-top: 40px;
+    justify-content: center;
+    padding: 15px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+}
