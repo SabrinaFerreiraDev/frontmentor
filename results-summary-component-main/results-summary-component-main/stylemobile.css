@@ -1,138 +1,182 @@
 @charset "UTF-8";
+
 @font-face {
-    font-family: "hank";
-    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("opentype");
+  font-family: "hank";
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("opentype");
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#resultados{
-    height: 42vh;
-   background-image: linear-gradient(to bottom , hsl(252, 100%, 67%),
-   hsl(241, 81%, 54%));
-   border-bottom-left-radius: 30px;
-   border-bottom-right-radius: 30px;
-   margin: auto;
-   text-align: justify;
-   display: flex;
-   flex-flow: column nowrap;
-}
-h1{
-    font-size: 1.5em;
-    color: hsl(241, 100%, 89%);
-    padding-top: 20px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-aside >  #num{
-    font-family: "hank";
-   text-align: center;
-   padding-top: 10px;
-   font-size: 4em;
-   font-weight: bolder;
-   color: aliceblue;
 
+body {
+  font-family: "hank", sans-serif;
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
 }
-#info{
-    color: hsl(241, 100%, 89%);
-    font-family: "hank";
-    text-align: center;
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
-aside{
-    margin: auto;
-    width: 130px;
-    height: 130px;
-    background-image: linear-gradient(to bottom,hsl(241, 81%, 54%), hsla(241, 72%, 46%, 0));
-    border-radius: 50%;
+
+#resultados {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
-h2{
-    text-align: center;
+
+#resultados h1 {
+  font-size: 1rem;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 1rem;
+}
+
+aside {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+
+#num {
     color: aliceblue;
-    padding-top: 30px;
+  font-size: 3rem;
+  font-weight: bold;
 }
-#informacao{
-    font-family:  "hank";
-    padding-top: 10px ;
-    padding-bottom: 25PX;
-    text-align: center;
-    color: hsl(241, 100%, 89%);
+
+#info {
+  color: hsl(241, 100%, 89%);
+  font-size: 0.9rem;
 }
-main{
-    width: 100vw;
-    height: 100vh;
-    
+
+#resultados h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
-#resumo{  
-    padding-top: 10px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
- 
+
+#informacao {
+  font-size: 0.9rem;
+  color: hsl(241, 100%, 89%);
+  margin-top: 0.5rem;
 }
-h3{
-    padding-left: 20px;
-    padding-top: 15px;
-   
+#resumo {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
+
+#resumo h3 {
+  font-size: 1rem;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 0.5rem;
+}
+
 .item {
-    justify-content: space-between; /* empurra os lados */
-    align-items: center;            /* alinha verticalmente */
-    margin-top: 10px;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .icone {
-    width: 20px; /* Ajuste conforme necessário */
-    height: auto;
+  width: 20px;
 }
-#reaction{
-    color: hsl(0, 100%, 67%);
-    background-color: hsla(0, 100%, 67%, 0.082);
-    padding: 15px;
-    width: 27rem;
-    border-radius: 10px;
+
+#reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
 }
-#celebro{
-    color: hsl(39, 100%, 56%);
-    background-color: hsla(39, 100%, 56%, 0.068);
-    padding: 15px;
-    width: 27rem;
-    border-radius: 10px;
+
+#celebro {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
 }
-#verbal{
-    color: hsl(166, 100%, 37%);
-    background-color:  hsla(166, 100%, 37%, 0.048);
-    padding: 15px;
-    width: 27rem;
-    border-radius: 10px;
+
+#verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
 }
-#visual{
-    color: hsl(234, 85%, 45%);
-    background-color: hsla(234, 85%, 45%, 0.062);
-    padding: 15px;
-    width: 27rem;
-    border-radius: 10px;
-    display: flex;
+
+#visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
 }
 strong{
     color: rgba(0, 0, 0, 0.74);
 }
-.label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 p{
     color: hsl(228, 3%, 64%);
 }
-button{
-    margin-top: 40px;
-    justify-content: center;
-    padding: 15px;
-    width: 450px;
-    border-radius: 20px;
-    background-color: hsl(224, 30%, 27%);
+
+
+.botao-container {
+  margin-top: 1rem;
 }
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+/* -------- MEDIA QUERY PARA TELAS GRANDES -------- */
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    max-width: 700px;
+  }
+
+  #resultados, #resumo {
+    width: 50%;
+  }
+
+  #resultados {
+    border-radius: 30px 0 0 30px;
+  }
+
+  #resumo {
+    border-radius: 0 30px 30px 0;
+  }
+}
+
