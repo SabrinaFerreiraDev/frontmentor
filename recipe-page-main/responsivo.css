@@ -11,7 +11,7 @@
     src: url('assets/fonts/corleone/Corleone-Due-Regular.otf') format('opentype');
 }
 
-/* Variáveis */
+
 :root {
     --fonttuiv: tuiven;
     --fontcorleone: corleone;
@@ -22,7 +22,7 @@
     --cor-preparo-texto: hsl(332, 51%, 32%);
 }
 
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +46,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Imagem da receita */
+
 img {
     width: 100%;
     height: auto;
@@ -54,7 +54,7 @@ img {
     display: block;
 }
 
-/* Título */
+
 h1 {
     text-align: center;
     font-family: var(--fontcorleone);
@@ -62,16 +62,18 @@ h1 {
     font-size: 2.5em;
     padding: 0.5em 0;
     line-height: 1.2;
+    color: black;
+    font-size: 3em;
 }
 
-/* Descrição */
+
 .omelette > p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding: 1.5em 1em;
 }
 
-/* Seção de preparo */
+
 .preparo {
     background-color: var(--cor-preparo-bg);
     width: 90%;
@@ -96,7 +98,6 @@ h1 {
     color: var(--cor-texto);
 }
 
-/* Ingredientes */
 .ingrediente h2,
 .instrucoes h2,
 .nutriente h2 {
@@ -122,7 +123,7 @@ section.ingrediente hr,
     margin: 2em auto;
 }
 
-/* Instruções */
+
 ol > li::marker {
     font-weight: bold;
     font-size: 1.2em;
@@ -172,10 +173,11 @@ footer {
     font-size: 0.9em;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 3em;
+        color: black;
     }
 
     h2 {
@@ -192,29 +194,4 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8em;
-    }
 
-    h2 {
-        font-size: 1.1em;
-    }
-
-    body {
-        padding: 0.5em;
-    }
-
-    .omelette > p {
-        padding: 1em 0.5em;
-        font-size: 0.95em;
-    }
-
-    .tabela-nutrientes {
-        width: 100%;
-    }
-
-    ol li {
-        padding-left: 0.5em;
-    }
-}
