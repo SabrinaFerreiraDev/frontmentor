@@ -1,0 +1,9 @@
+{
+	"editor.autoClosingQuotes": "always",
+	"editor.autoIndent": "full",
+	"prettier.bracketSameLine": false,
+	"prettier.vueIndentScriptAndStyle": true,
+	"prettier.useTabs": true,
+	"path-intellisense.autoTriggerNextSuggestion": true,
+	"editor.formatOnPaste": true
+}

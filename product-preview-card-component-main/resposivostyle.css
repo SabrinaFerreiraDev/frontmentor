@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Arial', sans-serif; 
+}
+body,html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.pai {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+}
+article{
+  width: 350px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.img {
+  width: 100%;
+}
+
+.img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.filho {
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.item {
+  padding: 5px 0;
+}
+
+p, h1 {
+  padding-top: 15px;
+}
+
+#produto {
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+#descricao {
+  line-height: 1.5;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  height: 45px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+.precos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .preco-atual {
+    color: hsl(158, 36%, 37%);
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .preco-antigo {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+@media screen and (min-width:768px ){
+
+    .pai{
+        
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+       
+            
+    }
+    article{
+      display: inline-flex;
+      width: 750px;
+      height: 410px;
+    }
+    .img img{
+        border-radius: 0;
+        width: 350px;
+        height: 450px;
+        object-fit: cover;
+    }
+    article > .filho{
+        width:90%;
+     
+    }
+    .img{
+        padding: 0;
+        margin: 0%;
+    }
+
+}
+
+  
+
+
