@@ -12,34 +12,49 @@ main{
     width: 300px;
     height: 70vh;
     border-radius: 1em;
+    box-shadow: 20px 20px 5px  hsl(215, 47%, 14%);
     
 }
-.imagem{
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 6%; /* espaço acima da imagem */
+.imagem {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    
+    border-radius: 10px;
+    overflow: hidden;
 }
-.imagemescondida{
-    display: none;
-}
-.imagem:hover > .imagemescondida {
+
+.principal {
+    width: 100%;
     display: block;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 247, 0.5); /* Azul translúcido */
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
 }
-.principal{
-    border-radius: 1em;
-    width: 250px;
-    height: 250px;
-    display: block;
+
+.eye-icon {
+    width: 40px;
+    height: 40px;
 }
+
+.imagem:hover .overlay {
+    opacity: 1;
+}
+
 h1{
     color: hsl(0, 0%, 100%);
     font-size: 1.8em;
@@ -76,16 +91,39 @@ hr{
     width: 80%;
    
 }
-.Creation{
-
-    width: 40px;
-}
-.Crea{
-    display: flex; /* faz imagem e texto ficarem lado a lado */
-    align-items: center; /* alinha verticalmente ao centro */
-    gap: 0px; /* espaço entre imagem e texto */
-    padding: 0.9em;
-}
-aside{
-    align-self:left;
-}
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .info h2 {
+    margin: 0;
+    font-size: 1.1em;
+    opacity: 0.8;
+  }
+  h2{
+    color: hsl(0, 3%, 79%);
+  }
+  
+  h2 > a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+  }
+  
+  h2 > a:hover {
+    color: hsl(178, 100%, 50%);
+  }
